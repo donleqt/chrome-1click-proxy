@@ -1,4 +1,4 @@
-document.getElementById('enable').addEventListener('click', async () => {
+async function connect() {
   // Retrieve proxy settings and applicable URLs from storage
   const config = await chrome.storage.local.get([
     'proxyHost',
@@ -49,9 +49,9 @@ document.getElementById('enable').addEventListener('click', async () => {
       chrome.action.setIcon({ path: 'icon-enabled.png' });
     }
   );
-});
+}
 
-document.getElementById('disable').addEventListener('click', () => {
+function disconnect() {
   // Disable the proxy settings
   chrome.proxy.settings.set(
     {
@@ -64,4 +64,8 @@ document.getElementById('disable').addEventListener('click', () => {
       chrome.action.setIcon({ path: 'icon.png' });
     }
   );
-});
+}
+
+// Attach events
+document.getElementById('enable').addEventListener('click', connect);
+document.getElementById('disable').addEventListener('click', disconnect);
