@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "SOCKS Proxy Manager",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "proxy", "action", "proxy"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "options_page": "options.html"
+}
