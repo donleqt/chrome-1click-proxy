@@ -1,4 +1,4 @@
-# Chrome SOCKS Proxy Extension
+# Chrome 1 click SOCKS Proxy Extension
 
 This Chrome extension allows you to configure and use a SOCKS proxy for your browsing sessions.
 
@@ -22,7 +22,7 @@ Here are some screenshots of the Chrome SOCKS Proxy Extension in action:
 
 1. Clone the repository:
   ```bash
-  git clone https://github.com/yourusername/chrome_socks_proxy_extension.git
+  git clone https://github.com/donleqt/chrome-1click-proxy.git
   ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" by toggling the switch in the top right corner.
