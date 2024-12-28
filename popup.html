@@ -7,19 +7,20 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-sans p-4 bg-gray-100" style="width: 300px">
-    <h3 class="text-xl font-bold mb-4">SOCKS Proxy Manager</h3>
+  <body class="font-sans p-4 bg-gray-100 w-fit-content">
+    <h3 class="text-xl font-bold mb-4 whitespace-nowrap">
+      SOCKS Proxy Manager
+    </h3>
+
     <button
-      id="enable"
-      class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+      id="toggle"
+      class="bg-green-500 w-full text-white max-w-sm py-2 px-4 rounded hover:bg-green-700"
+      data-enable-label="Connect"
+      data-disable-label="Disconnect"
+      data-enabled-class="bg-green-500 hover:bg-green-700"
+      data-disabled-class="bg-red-500 hover:bg-red-700"
     >
-      Enable Proxy
-    </button>
-    <button
-      id="disable"
-      class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700"
-    >
-      Disable Proxy
+      Connect
     </button>
     <a
       href="options.html"
@@ -27,6 +28,7 @@
       class="text-blue-500 underline mt-4 block"
       >Settings</a
     >
+    <script src="./functions.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>
